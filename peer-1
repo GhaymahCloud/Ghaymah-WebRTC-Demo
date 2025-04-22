@@ -14,3 +14,4 @@ const sendChannel = localConnection.createDataChannel("sendChannel");
 
 
 localConnection.createOffer().then(o => localConnection.setLocalDescription(o) )
+//Next step is to write the offer that will be generated here into peer-2 browser
