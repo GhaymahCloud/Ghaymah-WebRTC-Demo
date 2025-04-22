@@ -1,0 +1,10 @@
+// after setting up connection between peer-1 and peer-2 and copying offer and answer
+
+// in peer-1 broweser a command to open connection:
+localConnection.setRemoteDescription (answer).then(a=>console.log("done"))
+
+// to send data from peer-1 to peer-2 command:
+sendChannel.send("Hello from peer 1!");
+
+// to send data from peer-2 to peer-1 command:
+remoteConnection.channel.send("peeering back");
